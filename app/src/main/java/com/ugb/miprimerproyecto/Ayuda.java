@@ -16,7 +16,7 @@ public class Ayuda extends AppCompatActivity {
         setContentView(R.layout.activity_ayuda);
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
         String path = "android.resource://"+ getPackageName() + "/" +
-                R.raw.;
+                R.raw.rawr;
         videoView.setVideoURI(Uri.parse(path));
         videoView.start();
     }
