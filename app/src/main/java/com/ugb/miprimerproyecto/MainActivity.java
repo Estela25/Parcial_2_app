@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             confirmacion.setMessage(datosAmigosCursor.getString(1));
             confirmacion.setPositiveButton("Si", (dialog, which) -> {
                 miBD = new DB(getApplicationContext(), "", null, 1);
-                datosAmigosCursor = miBD.administracion_amigos("eliminar", new String[]{datosAmigosCursor.getString(0)});//idAmigo
+                datosAmigosCursor = miBD.administracion_Auto("eliminar", new String[]{datosAmigosCursor.getString(0)});//idAmigo
                 obtenerDatosAmigos();
                 mostrarMsgToask("Registro Eliminado con exito...");
                 dialog.dismiss();//cerrar el cuadro de dialogo
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void obtenerDatosAmigos(){
         miBD = new DB(getApplicationContext(),"",null,1);
-        datosAmigosCursor = miBD.administracion_amigos("consultar",null);
+        datosAmigosCursor = miBD.administracion_Auto("consultar",null);
         if( datosAmigosCursor.moveToFirst() ){//si hay datos que mostrar
             mostrarDatosAmigos();
         } else {//sino que llame para agregar nuevos amigos...

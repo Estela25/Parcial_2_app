@@ -21,40 +21,77 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtMyM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/cvrPhoto"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Marca y Modelo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtC_A"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"/>
+        android:layout_below="@id/txtMyM"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Caracteristicas del Auto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <EditText
-        android:id="@+id/txtTelefono"
-        android:layout_below="@id/txtNombre"
-        android:layout_margin="10dp"
-        android:hint="Telefono"
+        android:id="@+id/txtRequisitos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtC_A"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Requisitos de Compra"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <EditText
-        android:id="@+id/txtDireccion"
-        android:layout_below="@id/txtTelefono"
-        android:layout_margin="10dp"
-        android:hint="Direccion fisica donde vives"
+        android:id="@+id/txtTipo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/txtEmail"
-        android:layout_below="@id/txtDireccion"
-        android:layout_margin="10dp"
-        android:hint="Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRequisitos"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Tipo de Caja"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <Button
-        android:id="@+id/btnGuardarAmigo"
-        android:layout_below="@id/txtEmail"
-        android:layout_margin="10dp"
+        android:id="@+id/btnG_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar amigo"/>
+        android:layout_below="@id/txtTipo"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="10dp"
+        android:text="Guardar Informacion" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAtras"
@@ -64,4 +101,19 @@
         android:layout_alignParentRight="true"
         android:layout_margin="20dp"
         android:src="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="381dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="282dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Precio de Compra"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </RelativeLayout>

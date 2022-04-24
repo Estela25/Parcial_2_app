@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 public class DB extends SQLiteOpenHelper {
     Context miContext;
     static String nombreDB = "db_amigos";
-    static String tblAmigos = "CREATE TABLE tblamigos(idAmigo integer primary key autoincrement, nombre text, telefono text, direccion text, email text, urlPhoto text)";
+    static String tblAmigos = "CREATE TABLE tblamigos(idAmigo integer primary key autoincrement, Marca_y_Modelo text, Caracteristicas text, Requisitos text, Caja text, Precio text, urlPhoto text)";
 
     public DB(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, nombreDB, factory, version); //CREATE DATABASE db_amigos; -> MySQL, SQL Server, Oracle, PostGreeSQL, other...
@@ -25,20 +25,20 @@ public class DB extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //NO, porque es para migrar o actualizar a una nueva version...
     }
-    public Cursor administracion_amigos(String accion, String[] datos){
+    public Cursor administracion_Auto(String accion, String[] datos){
         try {
             Cursor datosCursor = null;
             SQLiteDatabase sqLiteDatabaseW = getWritableDatabase();
             SQLiteDatabase sqLiteDatabaseR = getReadableDatabase();
             switch (accion) {
                 case "consultar":
-                    datosCursor = sqLiteDatabaseR.rawQuery("select * from tblamigos order by nombre", null);
+                    datosCursor = sqLiteDatabaseR.rawQuery("select * from tblamigos order by Marca_y_Modelo", null);
                     break;
                 case "nuevo":
-                    sqLiteDatabaseW.execSQL("INSERT INTO tblamigos(nombre,telefono,direccion,email,urlPhoto) VALUES ('" + datos[1] + "','" + datos[2] + "','" + datos[3] + "','" + datos[4] + "','" + datos[5] + "')");
+                    sqLiteDatabaseW.execSQL("INSERT INTO tblamigos(Marca_y_Modelo,Caracteristicas,Requisitos,Caja,Precio,urlPhoto) VALUES ('" + datos[1] + "','" + datos[2] + "','" + datos[3] + "','" + datos[4] + "','" + datos[5]+ "','" + datos[6] + "')");
                     break;
                 case "modificar":
-                    sqLiteDatabaseW.execSQL("UPDATE tblamigos SET nombre='" + datos[1] + "',telefono='" + datos[2] + "',direccion='" + datos[3] + "',email='" + datos[4] + "',urlPhoto='" + datos[5] + "' WHERE idAmigo='" + datos[0] + "'");
+                    sqLiteDatabaseW.execSQL("UPDATE tblamigos SET Marca_y_Modelo='" + datos[1] + "',Caracteristicas='" + datos[2] + "',Requisitos='" + datos[3] + "',Caja='" + datos[4] +"',Precio='" + datos[5] + "',urlPhoto='"+ datos[6] + "' WHERE idAmigo='" + datos[0] + "'");
                     break;
                 case "eliminar":
                     sqLiteDatabaseW.execSQL("DELETE FROM tblamigos WHERE idAmigo='" + datos[0] + "'");

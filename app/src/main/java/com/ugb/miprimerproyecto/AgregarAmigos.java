@@ -45,23 +45,26 @@ public class AgregarAmigos extends AppCompatActivity {
         imgFotoAmigo.setOnClickListener(v->{
             tomarFotoAmigo();
         });
-        btn = findViewById(R.id.btnGuardarAmigo);
+        btn = findViewById(R.id.btnG_info);
         btn.setOnClickListener(v->{
-            tempVal = findViewById(R.id.txtNombre);
-            String nombre = tempVal.getText().toString();
+            tempVal = findViewById(R.id.txtMyM);
+            String Marca_y_Modelo = tempVal.getText().toString();
 
-            tempVal = findViewById(R.id.txtTelefono);
-            String tel = tempVal.getText().toString();
+            tempVal = findViewById(R.id.txtC_A);
+            String Caracteristicas= tempVal.getText().toString();
 
-            tempVal = findViewById(R.id.txtDireccion);
-            String direccion = tempVal.getText().toString();
+            tempVal = findViewById(R.id.txtRequisitos);
+            String Requisitos= tempVal.getText().toString();
 
-            tempVal = findViewById(R.id.txtEmail);
-            String email = tempVal.getText().toString();
+            tempVal = findViewById(R.id.txtTipo);
+            String Caja = tempVal.getText().toString();
 
-            String[] datos = {idAmigo,nombre,tel,direccion,email,urlCompletaImg};
-            miBD.administracion_amigos(accion,datos);
-            mostrarMsgToast("Registro guardado con exito.");
+            tempVal = findViewById(R.id.txtTipo);
+            String Precio = tempVal.getText().toString();
+
+            String[] datos = {idAmigo,Marca_y_Modelo,Caracteristicas,Requisitos,Caja,Precio,urlCompletaImg};
+            miBD.administracion_Auto(accion,datos);
+            mostrarMsgToast("Informacion guardada con exito.");
 
             mostrarVistaPrincipal();
         });
@@ -76,16 +79,16 @@ public class AgregarAmigos extends AppCompatActivity {
 
                 idAmigo = datos[0];
 
-                tempVal = findViewById(R.id.txtNombre);
+                tempVal = findViewById(R.id.txtMyM);
                 tempVal.setText(datos[1]);
 
-                tempVal = findViewById(R.id.txtTelefono);
+                tempVal = findViewById(R.id.txtC_A);
                 tempVal.setText(datos[2]);
 
-                tempVal = findViewById(R.id.txtDireccion);
+                tempVal = findViewById(R.id.txtRequisitos);
                 tempVal.setText(datos[3]);
 
-                tempVal = findViewById(R.id.txtEmail);
+                tempVal = findViewById(R.id.txtTipo);
                 tempVal.setText(datos[4]);
 
                 urlCompletaImg = datos[5];
