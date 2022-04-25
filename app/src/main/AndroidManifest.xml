@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPrimerProyecto">
         <activity
+            android:name=".Presupuesto"
+            android:exported="false" />
+        <activity
             android:name=".Recomendacion_auto"
             android:exported="false" />
         <activity
