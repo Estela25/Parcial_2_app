@@ -49,7 +49,7 @@
             android:name=".Ayuda"
             android:exported="false"></activity>
         <activity
-            android:name=".AgregarAmigos"
+            android:name=".AgregarAuto"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:onClick="regresar"
         android:text="Regresar"
         android:textColor="@color/Blu"
         android:textSize="20sp"

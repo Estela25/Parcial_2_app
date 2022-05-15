@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@raw/fondo"
-    tools:context=".AgregarAmigos">
+    tools:context=".AgregarAuto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvrPhoto"

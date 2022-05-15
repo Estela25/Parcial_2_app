@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 
 public class DB extends SQLiteOpenHelper {
     Context miContext;
-    static String nombreDB = "db_amigos";
+    static String nombreDB = "db_auto2";
     static String tblAmigos = "CREATE TABLE tblamigos(idAmigo integer primary key autoincrement, Marca_y_Modelo text, Caracteristicas text, Requisitos text, Caja text, Precio text, urlPhoto text)";
 
     public DB(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {

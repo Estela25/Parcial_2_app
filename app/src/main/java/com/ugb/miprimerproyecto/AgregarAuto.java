@@ -22,7 +22,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class AgregarAmigos extends AppCompatActivity {
+public class AgregarAuto extends AppCompatActivity {
     FloatingActionButton btnAtras;
     ImageView imgFotoAmigo;
     Intent tomarFotoIntent;
@@ -34,7 +34,7 @@ public class AgregarAmigos extends AppCompatActivity {
     @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_agregar_amigos);
+            setContentView(R.layout.activity_agregar_auto);
 
             miBD = new DB(getApplicationContext(),"",null,1);
         btnAtras = findViewById(R.id.btnAtras);
@@ -100,7 +100,7 @@ public class AgregarAmigos extends AppCompatActivity {
         }
     }
     private void mostrarVistaPrincipal(){
-        Intent iprincipal = new Intent(getApplicationContext(), MainActivity.class);
+        Intent iprincipal = new Intent(getApplicationContext(), Mostrar_Auto.class);
         startActivity(iprincipal);
     }
     private void tomarFotoAmigo(){
@@ -114,7 +114,7 @@ public class AgregarAmigos extends AppCompatActivity {
             }
             if( photoAmigo!=null ){
                 try{
-                    Uri uriPhotoAmigo = FileProvider.getUriForFile(AgregarAmigos.this, "com.ugb.miprimerproyecto.fileprovider",photoAmigo);
+                    Uri uriPhotoAmigo = FileProvider.getUriForFile(AgregarAuto.this, "com.ugb.miprimerproyecto.fileprovider",photoAmigo);
                     tomarFotoIntent.putExtra(MediaStore.EXTRA_OUTPUT, uriPhotoAmigo);
                     startActivityForResult(tomarFotoIntent,1);
                 }catch (Exception e){

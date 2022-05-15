@@ -39,7 +39,7 @@ public class Mostrar_Auto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_auto);
 
-        btn = findViewById(R.id.btnAgregarAmigos);
+        btn = findViewById(R.id.btnAgregarAuto);
         btn.setOnClickListener(v->{
             agregarAmigos("nuevo", new String[]{});
         });
@@ -109,7 +109,7 @@ public class Mostrar_Auto extends AppCompatActivity {
     }
 
     private void buscarAmigos() {
-        TextView tempVal = findViewById(R.id.txtBuscarAmigos);
+        TextView tempVal = findViewById(R.id.txtBuscarAuto);
         tempVal.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -160,7 +160,7 @@ public class Mostrar_Auto extends AppCompatActivity {
             parametrosAmigos.putString("accion", accion);
             parametrosAmigos.putStringArray("datos", datos);
 
-            Intent agregarAmigos = new Intent(getApplicationContext(), AgregarAmigos.class);
+            Intent agregarAmigos = new Intent(getApplicationContext(), AgregarAuto.class);
             agregarAmigos.putExtras(parametrosAmigos);
             startActivity(agregarAmigos);
         }catch (Exception e){
@@ -181,7 +181,7 @@ public class Mostrar_Auto extends AppCompatActivity {
     }
 
     private void mostrarDatosAmigos(){
-        ltsAmigos = findViewById(R.id.ltsamigos);
+        ltsAmigos = findViewById(R.id.lsAuto);
         amigosArrayList.clear();
         amigosArrayListCopy.clear();
         do{

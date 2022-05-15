@@ -19,7 +19,7 @@ public class Menu_P extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent vuelva = new
-                        Intent(Menu_P.this,Mostrar_Auto.class);
+                        Intent(Menu_P.this,AgregarAuto.class);
                 startActivity(vuelva);
             }
         });
@@ -39,7 +39,7 @@ public class Menu_P extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent vuelva = new
-                        Intent(Menu_P.this,Registro_de_ventas.class);
+                        Intent(Menu_P.this,Agregar_registro.class);
                 startActivity(vuelva);
             }
         });
