@@ -32,11 +32,11 @@ public class AgregarAmigos extends AppCompatActivity {
     TextView tempVal;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agregar_amigos);
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_agregar_amigos);
 
-        miBD = new DB(getApplicationContext(),"",null,1);
+            miBD = new DB(getApplicationContext(),"",null,1);
         btnAtras = findViewById(R.id.btnAtras);
         btnAtras.setOnClickListener(v->{
             mostrarVistaPrincipal();

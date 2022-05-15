@@ -16,16 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPrimerProyecto">
         <activity
+            android:name=".Agregar_registro"
+            android:exported="false" />
+        <activity
             android:name=".Registro_data"
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Registro_de_ventas"
@@ -44,9 +47,7 @@
             android:exported="false" />
         <activity
             android:name=".Ayuda"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".AgregarAmigos"
             android:exported="false" />

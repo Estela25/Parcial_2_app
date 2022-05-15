@@ -13,13 +13,15 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import Database.Auto;
+
 public class adaptadorImagenes  extends BaseAdapter {
     Context context;
-    ArrayList<amigos> datosAmigosArrayList;
+    ArrayList<Auto> datosAmigosArrayList;
     LayoutInflater layoutInflater;
-    amigos misAmigos;
+    Auto misAmigos;
 
-    public adaptadorImagenes(Context context, ArrayList<amigos> datosAmigosArrayList) {
+    public adaptadorImagenes(Context context, ArrayList<Auto> datosAmigosArrayList) {
         this.context = context;
         this.datosAmigosArrayList = datosAmigosArrayList;
     }
@@ -34,7 +36,7 @@ public class adaptadorImagenes  extends BaseAdapter {
     }
     @Override
     public long getItemId(int position) {
-        return Long.parseLong( datosAmigosArrayList.get(position).getIdAmigo() );
+        return Long.parseLong( datosAmigosArrayList.get(position).getIdAmigos() );
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -44,13 +46,13 @@ public class adaptadorImagenes  extends BaseAdapter {
         ImageView imgViewView = itemView.findViewById(R.id.imgPhoto);
         try{
             misAmigos = datosAmigosArrayList.get(position);
-            tempVal.setText(misAmigos.getNombre());
+            tempVal.setText(misAmigos.getMarcayModelo());
 
             tempVal = itemView.findViewById(R.id.lblTelefono);
-            tempVal.setText(misAmigos.getTelefono());
+            tempVal.setText(misAmigos.getCaja());
 
             tempVal = itemView.findViewById(R.id.lblemail);
-            tempVal.setText(misAmigos.getEmail());
+            tempVal.setText(misAmigos.getPrecio());
 
             Bitmap imagenBitmap = BitmapFactory.decodeFile(misAmigos.getUrlImg());
             imgViewView.setImageBitmap(imagenBitmap);
