@@ -15,7 +15,6 @@ Integer estado;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presupuesto);
         TextView Estado = (TextView)findViewById(R.id.tbMensaje);
-        Button bVolver = (Button)findViewById(R.id.btVolver);
         Bundle datosRecibidos = this.getIntent().getExtras();
         String edad = datosRecibidos.getString("Presupuesto");
         estado = Integer.parseInt(edad);
@@ -24,14 +23,14 @@ Integer estado;
         }else{
             Estado.setText("SE LE RECOMIENDA UN AUTO TIPO AUTOMATICO");
         }
-        bVolver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent vuelva = new
-                        Intent(Presupuesto.this,Recomendacion_auto.class);
-                startActivity(vuelva);
-            }
-        });
+
     }
-}
+
+        public void volver (View view) {
+            Intent vuelva = new
+                    Intent(Presupuesto.this,Recomendacion_auto.class);
+            startActivity(vuelva);
+        }
+    }
+
 
