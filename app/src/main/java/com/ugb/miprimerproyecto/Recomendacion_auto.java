@@ -31,6 +31,12 @@ public class Recomendacion_auto extends AppCompatActivity {
             }
         });
     }
+
+
+    public void Salir(View view) {
+        Intent volver = new Intent(this, Menu_P.class);
+        startActivity(volver);
+    }
 }
 
 

@@ -59,5 +59,11 @@ public class Registro_de_ventas extends AppCompatActivity {
         Intent iagregar = new Intent(Registro_de_ventas.this, Agregar_registro.class);
         startActivity(iagregar);
     }
+
+
+    public void Salir(View view) {
+        Intent volver = new Intent(this, Menu_P.class);
+        startActivity(volver);
+    }
 }
 

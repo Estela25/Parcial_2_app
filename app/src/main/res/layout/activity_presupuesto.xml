@@ -71,6 +71,7 @@
         android:id="@+id/btMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="Salir"
         android:text="Menu Principal"
         android:textColor="@color/Azul"
         app:backgroundTint="@color/Blu"

@@ -19,7 +19,7 @@ public class Menu_P extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent vuelva = new
-                        Intent(Menu_P.this,AgregarAuto.class);
+                        Intent(Menu_P.this,Mostrar_Auto.class);
                 startActivity(vuelva);
             }
         });

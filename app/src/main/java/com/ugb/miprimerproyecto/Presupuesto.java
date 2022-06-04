@@ -31,6 +31,12 @@ Integer estado;
                     Intent(Presupuesto.this,Recomendacion_auto.class);
             startActivity(vuelva);
         }
+
+
+    public void Salir(View view) {
+        Intent volver = new Intent(this, Menu_P.class);
+        startActivity(volver);
     }
+}
 
 

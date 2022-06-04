@@ -44,6 +44,7 @@
         android:layout_marginRight="322dp"
         android:layout_marginBottom="51dp"
         android:clickable="true"
+        android:onClick="Salir"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ListView
