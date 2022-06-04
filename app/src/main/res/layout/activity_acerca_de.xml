@@ -72,8 +72,8 @@
 
     <Button
         android:id="@+id/btnSalir"
-        android:layout_width="125dp"
-        android:layout_height="41dp"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
         android:onClick="Salir"
         android:text="Regresar"
         android:textColor="@color/Azul"
@@ -82,10 +82,10 @@
         app:backgroundTint="@color/Blu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <TextView
         android:id="@+id/textView14"
@@ -123,15 +123,14 @@
         android:layout_width="103dp"
         android:layout_height="40dp"
         android:fontFamily="sans-serif-black"
-        android:text="2.2.30"
+        android:text="BETA 1.0"
         android:textColor="@color/Blu"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.622" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

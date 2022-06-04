@@ -9,88 +9,100 @@
 
     <Button
         android:id="@+id/btnAcerca"
-        android:layout_width="281dp"
-        android:layout_height="49dp"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
         android:text="Acerca de"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.686" />
 
     <Button
         android:id="@+id/btnAyuda"
-        android:layout_width="281dp"
-        android:layout_height="49dp"
+        android:layout_width="278dp"
+        android:layout_height="55dp"
         android:text="Ayuda"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.582" />
 
     <Button
         android:id="@+id/btnRegistro"
-        android:layout_width="281dp"
-        android:layout_height="49dp"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
         android:text="Registro de venta"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintVertical_bias="0.477" />
 
     <Button
         android:id="@+id/btnRecome"
-        android:layout_width="281dp"
-        android:layout_height="49dp"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
         android:text="Recomendacion por presupuesto"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="100dp"
-        android:layout_height="28dp"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:fontFamily="sans-serif-black"
         android:text="AUTOS ULTRA"
+        android:textColor="@color/Azul"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.089" />
 
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="115dp"
-        android:layout_height="46dp"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
         android:text="Salir"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.773"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
+        app:layout_constraintVertical_bias="0.862" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="APP DE INVENTARIO"
+        android:textColor="@color/Azul"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -106,8 +118,8 @@
 
     <Button
         android:id="@+id/btnInventario"
-        android:layout_width="268dp"
-        android:layout_height="53dp"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
         android:text="Inventario"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"

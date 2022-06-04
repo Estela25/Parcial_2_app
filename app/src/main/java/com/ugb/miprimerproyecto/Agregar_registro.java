@@ -48,9 +48,9 @@ public class Agregar_registro extends AppCompatActivity {
 
             mostrarVistaPrincipal();
         });
-        mostrarDatosAmigos();
+        mostrarDatosAuti();
     }
-    private void mostrarDatosAmigos() {
+    private void mostrarDatosAuti() {
         try{
             Bundle recibirParametros = getIntent().getExtras();
             accion = recibirParametros.getString("accion");

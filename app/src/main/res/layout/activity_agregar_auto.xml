@@ -52,6 +52,7 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-black"
         android:hint="Caracteristicas del Auto"
+        android:textColor="@color/blan"
         android:textColorHint="@color/blan"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -87,6 +88,7 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-black"
         android:hint="Tipo de Caja"
+        android:textColor="@color/blan"
         android:textColorHint="@color/blan"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -120,17 +122,18 @@
 
     <EditText
         android:id="@+id/txtPrecio"
-        android:layout_width="347dp"
+        android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:layout_marginBottom="257dp"
         android:ems="10"
         android:hint="Precio"
         android:inputType="textPersonName"
+        android:textColor="@color/blan"
         android:textColorHint="@color/blan"
         android:textSize="20sp"
         android:textStyle="bold" />

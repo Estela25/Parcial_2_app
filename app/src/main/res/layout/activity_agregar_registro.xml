@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
         android:hint="Marca y Modelo"
+        android:inputType="textPersonName"
         android:textColor="@color/Azul"
         android:textColorHint="@color/Azul"
         android:textSize="18sp"
@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <EditText
         android:id="@+id/TPrec"
@@ -32,8 +32,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
         android:hint="Precio"
+        android:inputType="textPersonName"
         android:textColor="@color/Azul"
         android:textColorHint="@color/Azul"
         android:textStyle="bold"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.323" />
 
     <EditText
         android:id="@+id/TFecha"
@@ -50,8 +50,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
         android:hint="Fecha de venta"
+        android:inputType="textPersonName"
         android:textColor="@color/Azul"
         android:textColorHint="@color/Azul"
         android:textColorLink="@color/Azul"
@@ -61,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.43" />
 
     <EditText
         android:id="@+id/TVendedor"
@@ -69,8 +69,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
         android:hint="Vendedor a cargo"
+        android:inputType="textPersonName"
         android:textColor="@color/Azul"
         android:textColorHint="@color/Azul"
         android:textStyle="bold"
@@ -79,12 +79,12 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.536" />
 
     <Button
         android:id="@+id/BTNRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
         android:fontFamily="sans-serif-black"
         android:text="Registrar"
         android:textColor="@color/blan"
@@ -96,12 +96,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="49dp"
         android:fontFamily="sans-serif-black"
         android:text="Regresar"
         android:textColor="@color/blan"
@@ -110,8 +110,24 @@
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.854" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="AGREGAR EL REGISTRO DE VENTAS"
+        android:textColor="@color/Azul"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -68,9 +68,9 @@ public class AgregarAuto extends AppCompatActivity {
 
             mostrarVistaPrincipal();
         });
-        mostrarDatosAmigos();
+        mostrarDatosAuto();
     }
-    private void mostrarDatosAmigos() {
+    private void mostrarDatosAuto() {
         try{
             Bundle recibirParametros = getIntent().getExtras();
             accion = recibirParametros.getString("accion");

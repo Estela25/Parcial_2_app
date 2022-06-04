@@ -10,9 +10,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/auto_ultra"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/auto_ultra_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPrimerProyecto">
         <activity
