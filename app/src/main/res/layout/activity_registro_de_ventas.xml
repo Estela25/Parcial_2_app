@@ -24,6 +24,7 @@
         android:layout_marginRight="41dp"
         android:layout_marginBottom="53dp"
         android:clickable="true"
+        android:onClick="registrar_auto"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -46,6 +47,7 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ListView
+        android:id="@+id/ltAuti"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

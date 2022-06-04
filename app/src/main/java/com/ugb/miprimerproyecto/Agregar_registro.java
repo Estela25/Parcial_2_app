@@ -28,18 +28,18 @@ public class Agregar_registro extends AppCompatActivity {
             mostrarVistaPrincipal();
         });
 
-        btn = findViewById(R.id.btnG_info);
+        btn = findViewById(R.id.BTNRegistrar);
         btn.setOnClickListener(v->{
-            txt = findViewById(R.id.txtMyM);
+            txt = findViewById(R.id.tMarc);
             String Marca = txt.getText().toString();
 
-            txt1 = findViewById(R.id.txtC_A);
+            txt1 = findViewById(R.id.TPrec);
             String Precio= txt1.getText().toString();
 
-            txt2 = findViewById(R.id.txtRequisitos);
+            txt2 = findViewById(R.id.TFecha);
             String Fecha= txt2.getText().toString();
 
-            txt3= findViewById(R.id.txtTipo);
+            txt3= findViewById(R.id.TVendedor);
             String Vendedor = txt3.getText().toString();
 
             String[] datos = {idVenta,Marca,Precio,Fecha,Vendedor,};
