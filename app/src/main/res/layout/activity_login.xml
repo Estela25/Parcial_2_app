@@ -46,8 +46,8 @@
 
     <EditText
         android:id="@+id/edtClave"
-        android:layout_width="233dp"
-        android:layout_height="52dp"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:hint="Ingrese Contraseña"
@@ -65,8 +65,8 @@
 
     <Button
         android:id="@+id/btnIniciar"
-        android:layout_width="205dp"
-        android:layout_height="55dp"
+        android:layout_width="209dp"
+        android:layout_height="76dp"
         android:onClick="InicioSesion"
         android:text="Iniciar Sesion"
         android:textColor="@color/blan"

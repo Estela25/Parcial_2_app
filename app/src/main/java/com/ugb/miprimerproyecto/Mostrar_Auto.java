@@ -66,13 +66,13 @@ public class Mostrar_Auto extends AppCompatActivity {
                     break;
                 case R.id.mnxModificar:
                     String[] datos = {
-                            datosAmigosCursor.getString(0),//idAmigo
-                            datosAmigosCursor.getString(1),//nombre
-                            datosAmigosCursor.getString(2),//telefono
-                            datosAmigosCursor.getString(3),//direccion
-                            datosAmigosCursor.getString(4), //email
+                            datosAmigosCursor.getString(0),
+                            datosAmigosCursor.getString(1),
+                            datosAmigosCursor.getString(2),
+                            datosAmigosCursor.getString(3),
+                            datosAmigosCursor.getString(4),
                             datosAmigosCursor.getString(5),
-                            datosAmigosCursor.getString(6) //url photo
+                            datosAmigosCursor.getString(6)
                     };
                     agregarAmigos("modificar", datos);
                     break;
@@ -119,16 +119,16 @@ public class Mostrar_Auto extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 try{
                     amigosArrayList.clear();
-                    if( tempVal.getText().toString().trim().length()<1 ){//si no esta escribiendo, mostramos todos los registros
+                    if( tempVal.getText().toString().trim().length()<1 ){
                         amigosArrayList.addAll(amigosArrayListCopy);
-                    } else {//si esta buscando entonces filtramos los datos
+                    } else {
                         for (Auto am : amigosArrayListCopy){
                             String nombre = am.getMarcayModelo();
                             String tel = am.getRequisitos();
                             String email = am.getCaja();
                             String direccion = am.getPrecio();
 
-                            String buscando = tempVal.getText().toString().trim().toLowerCase();//escribe en la caja de texto...
+                            String buscando = tempVal.getText().toString().trim().toLowerCase();
 
                             if(nombre.toLowerCase().trim().contains(buscando) ||
                                     tel.trim().contains(buscando) ||
@@ -174,8 +174,8 @@ public class Mostrar_Auto extends AppCompatActivity {
         datosAmigosCursor = miBD.administracion_Auto("consultar",null);
         if( datosAmigosCursor.moveToFirst() ){//si hay datos que mostrar
             mostrarDatosAmigos();
-        } else {//sino que llame para agregar nuevos amigos...
-            mostrarMsgToask("No hay datos de amigos que mostrar, por favor agregue nuevos amigos...");
+        } else {
+            mostrarMsgToask("No hay productos que mostrar, agregue uno nuevo ...");
             agregarAmigos("nuevo", new String[]{});
         }
     }
@@ -186,13 +186,13 @@ public class Mostrar_Auto extends AppCompatActivity {
         amigosArrayListCopy.clear();
         do{
             misAmigos = new Auto(
-                    datosAmigosCursor.getString(0),//idAmigo
-                    datosAmigosCursor.getString(1),//nombre
-                    datosAmigosCursor.getString(2),//telefono
-                    datosAmigosCursor.getString(3),//direccion
-                    datosAmigosCursor.getString(4),//email
+                    datosAmigosCursor.getString(0),
+                    datosAmigosCursor.getString(1),
+                    datosAmigosCursor.getString(2),
+                    datosAmigosCursor.getString(3),
+                    datosAmigosCursor.getString(4),
                     datosAmigosCursor.getString(5),
-                    datosAmigosCursor.getString(6) //urlPhoto
+                    datosAmigosCursor.getString(6)
             );
             amigosArrayList.add(misAmigos);
         }while(datosAmigosCursor.moveToNext());
@@ -211,6 +211,7 @@ public class Mostrar_Auto extends AppCompatActivity {
 
     public void Salir(View view) {
         Intent volver = new Intent(this, Menu_P.class);
+        finish();
         startActivity(volver);
     }
 

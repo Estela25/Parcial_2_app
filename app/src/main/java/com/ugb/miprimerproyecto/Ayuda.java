@@ -23,6 +23,7 @@ public class Ayuda extends AppCompatActivity {
 
     public void regresar(View view) {
         Intent volver = new Intent(this,Menu_P.class);
+        finish();
         startActivity(volver);
     }
 }

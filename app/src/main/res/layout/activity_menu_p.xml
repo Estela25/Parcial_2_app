@@ -9,34 +9,34 @@
 
     <Button
         android:id="@+id/btnAcerca"
-        android:layout_width="280dp"
-        android:layout_height="54dp"
+        android:layout_width="272dp"
+        android:layout_height="74dp"
         android:text="Acerca de"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686" />
+        app:layout_constraintVertical_bias="0.768" />
 
     <Button
         android:id="@+id/btnAyuda"
-        android:layout_width="278dp"
-        android:layout_height="55dp"
+        android:layout_width="269dp"
+        android:layout_height="70dp"
         android:text="Ayuda"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        app:layout_constraintVertical_bias="0.636" />
 
     <Button
         android:id="@+id/btnRegistro"
-        android:layout_width="282dp"
-        android:layout_height="53dp"
+        android:layout_width="268dp"
+        android:layout_height="68dp"
         android:text="Registro de venta"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,20 +44,19 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.512" />
 
     <Button
         android:id="@+id/btnRecome"
-        android:layout_width="280dp"
-        android:layout_height="55dp"
+        android:layout_width="275dp"
+        android:layout_height="71dp"
         android:text="Recomendacion por presupuesto"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" />
+        app:layout_constraintVertical_bias="0.378" />
 
     <TextView
         android:id="@+id/textView8"
@@ -83,15 +82,15 @@
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintVertical_bias="0.906" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
         android:fontFamily="sans-serif-black"
         android:text="APP DE INVENTARIO"
         android:textColor="@color/Azul"
@@ -99,10 +98,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.146" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -110,7 +109,7 @@
         android:layout_height="102dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.079"
@@ -118,8 +117,8 @@
 
     <Button
         android:id="@+id/btnInventario"
-        android:layout_width="280dp"
-        android:layout_height="54dp"
+        android:layout_width="281dp"
+        android:layout_height="70dp"
         android:text="Inventario"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"

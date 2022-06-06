@@ -101,6 +101,7 @@ public class AgregarAuto extends AppCompatActivity {
     }
     private void mostrarVistaPrincipal(){
         Intent iprincipal = new Intent(getApplicationContext(), Mostrar_Auto.class);
+        finish();
         startActivity(iprincipal);
     }
     private void tomarFotoAmigo(){

@@ -68,6 +68,8 @@ public class Menu_P extends AppCompatActivity {
         bSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent volver = new Intent(Menu_P.this,Login.class);
+                startActivity(volver);
                 finish();
             }
         });

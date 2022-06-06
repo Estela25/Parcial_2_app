@@ -46,7 +46,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Funcion de la APP"
         android:textColor="@color/blan"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Informacion de la APP"
         android:textColor="@color/blan"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
 
     <Button
         android:id="@+id/btnSalir"
-        android:layout_width="134dp"
+        android:layout_width="185dp"
         android:layout_height="51dp"
         android:onClick="Salir"
         android:text="Regresar"
@@ -92,24 +92,27 @@
         android:layout_width="299dp"
         android:layout_height="79dp"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="APP de inventario de uso interno y especifico en empresa de comercializacion de autos"
         android:textColor="@color/Blu"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintVertical_bias="0.138" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="298dp"
         android:layout_height="114dp"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Llevar un registro ordenado de los autos que la empresa tiene en almacen, tambien cuenta con un campo para el registro de las ventanas "
         android:textColor="@color/Blu"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,17 +123,18 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="103dp"
-        android:layout_height="40dp"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
         android:fontFamily="sans-serif-black"
         android:text="BETA 1.0"
         android:textColor="@color/Blu"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.617" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

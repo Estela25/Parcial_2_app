@@ -79,6 +79,7 @@ public class Agregar_registro extends AppCompatActivity {
     }
     private void mostrarVistaPrincipal(){
         Intent iprincipal = new Intent(getApplicationContext(), Registro_de_ventas.class);
+        finish();
         startActivity(iprincipal);
     }
     private void mostrarMsgToast(String msg){

@@ -63,6 +63,7 @@ public class Registro_de_ventas extends AppCompatActivity {
 
     public void Salir(View view) {
         Intent volver = new Intent(this, Menu_P.class);
+        finish();
         startActivity(volver);
     }
 }

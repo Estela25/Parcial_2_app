@@ -19,9 +19,9 @@ Integer estado;
         String edad = datosRecibidos.getString("Presupuesto");
         estado = Integer.parseInt(edad);
         if(estado < 3000){
-            Estado.setText("SE LE RECOMIENDA UN AUTO TIPO ESTANDAR");
+            Estado.setText("SE LE RECOMIENDA \n UN AUTO TIPO ESTANDAR");
         }else{
-            Estado.setText("SE LE RECOMIENDA UN AUTO TIPO AUTOMATICO");
+            Estado.setText("SE LE RECOMIENDA \n UN AUTO TIPO AUTOMATICO");
         }
 
     }
@@ -35,6 +35,7 @@ Integer estado;
 
     public void Salir(View view) {
         Intent volver = new Intent(this, Menu_P.class);
+        finish();
         startActivity(volver);
     }
 }
